@@ -11,7 +11,6 @@ const LatestBikes = () => {
             .then(res => res.json())
             .then(data => setBikes(data))
     }, [])
-    console.log(bikes)
     return (
         <Container>
             <Box sx={{ padding: '70px 0' }}>
@@ -20,7 +19,7 @@ const LatestBikes = () => {
                 </Typography>
             </Box>
             <Box>
-                <Grid container spacing={4}>
+                <Grid container spacing={6}>
                     {
                         bikes.slice(0, 6).map(bike => <LatestBike
                             key={bike.id}

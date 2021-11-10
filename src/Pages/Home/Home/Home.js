@@ -4,6 +4,7 @@ import Header from '../../Shared/Header/Header';
 import Banner from '../Banner/Banner';
 import Footer from '../Footer/Footer';
 import LatestBikes from '../LatestBikes/LatestBikes';
+import News from '../News/News';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Header></Header>
             <Banner></Banner>
             <LatestBikes></LatestBikes>
+            <News></News>
             <h1>Home Comming</h1>
             <Button variant="contained">Contained</Button>
             <Footer></Footer>
