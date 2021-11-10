@@ -1,0 +1,72 @@
+[
+    {
+        "id": "01",
+        "name": "2021 Polygon Xtrada 7 - Hardtail Mountain Bike",
+        "description": "The New Cutting Edge. This is the ultimate XC race bike. Ground-breaking suspension, aggressive geometry and feathery weight let you go full gas from the gun. Grip where others slip",
+        "price": "7999",
+        "img": "https://i.ibb.co/QJKNy50/1.jpg"
+    },
+    {
+        "id": "02",
+        "name": "2021 Cannondale SuperSix EVO HI-MOD Disc Red eTap AXS",
+        "description": "Fast, just got faster. A pure road bike. Light, smooth and ultra fast. The evolution of the classic race machine.",
+        "price": "16483",
+        "img": "https://i.ibb.co/4YfpjqW/2.jpg"
+    },
+    {
+        "id": "03",
+        "name": "Cannondale SuperSix EVO Carbon Disc 105",
+        "description": "Feel the light. The lightest disc brake road frameset we've ever made. The new SuperSix EVO is ready to throw down when the grade goes up.",
+        "price": "3953",
+        "img": "https://i.ibb.co/nm1txqL/3.jpg"
+    },
+    {
+        "id": "04",
+        "name": "Cannondale SuperSix EVO Carbon Disc Rival AXS",
+        "description": "Cannondale SuperSix EVO Carbon Disc Rival AXS. Fast, just got faster. A pure road bike. Light, smooth and ultra fast. The evolution of the classic race machine.",
+        "price": "6593",
+        "img": "https://i.ibb.co/MfxJ1P0/4.jpg"
+    },
+    {
+        "id": "05",
+        "name": "Cannondale SuperSix EVO Carbon Disc Ultegra",
+        "description": "Cannondale SuperSix EVO Carbon Disc Ultegra. Fast, just got faster. A pure road bike. Light, smooth and ultra fast. The evolution of the classic race machine.",
+        "price": "6313",
+        "img": "https://i.ibb.co/0XMHD6x/5.jpg"
+    },
+    {
+        "id": "06",
+        "name": "2021 Cannondale SystemSix Carbon Ultegra",
+        "description": "2021 Cannondale SystemSix Carbon Ultegra. Faster everywhere. The fastest UCI-legal road bike in the world. More speed with less effort. Simple as that.",
+        "price": "7643",
+        "img": "https://i.ibb.co/xF3HWht/6.jpg"
+    },
+    {
+        "id": "07",
+        "name": "Cannondale CAAD13 Disc 105",
+        "description": "Cannondale CAAD13 Disc 105. Make your own luck. This is the speediest, smoothest, best handling, finest performing aluminum race bike on the planet.",
+        "price": "3533",
+        "img": "https://i.ibb.co/x1rxsGt/7.jpg"
+    },
+    {
+        "id": "08",
+        "name": "2021 Cannondale Scalpel Carbon SE 2",
+        "description": "The New Cutting Edge. Scalpel SE is the ultimate marathon racer and high-speed trail slayer. World Cup fast and allmountain fierce – this is next-level cross-country performance.",
+        "price": "5332",
+        "img": "https://i.ibb.co/nQryZmX/8.jpg"
+    },
+    {
+        "id": "09",
+        "name": "Cannondale CAAD13 Disc Tiagra",
+        "description": "Cannondale CAAD13 Disc Tiagra. Make your own luck. This is the speediest, smoothest, best handling, finest performing aluminum race bike on the planet.",
+        "price": "2883",
+        "img": "https://i.ibb.co/NYfn1m8/9.jpg"
+    },
+    {
+        "id": "10",
+        "name": "2021 Cannondale Topstone Carbon Lefty 3",
+        "description": "More Give. More Go. More Lefty. The gravel bike to beat all gravel bikes. High-volume 650b wheels and the bumperasing smoothness of our Kingpin suspension and new Lefty Oliver fork make this the ",
+        "price": "4825",
+        "img": "https://i.ibb.co/hMcfgTT/10.jpg"
+    }
+]
