@@ -16,7 +16,7 @@ const LatestBikes = () => {
         <Container>
             <Box sx={{ padding: '70px 0' }}>
                 <Typography variant="h2" sx={{ fontWeight: 'medium' }}>
-                    Our Latest Bikes :{bikes.length}
+                    Our Latest Bikes
                 </Typography>
             </Box>
             <Box>

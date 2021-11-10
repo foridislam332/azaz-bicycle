@@ -8,7 +8,7 @@ const LatestBike = ({ bike }) => {
         <Grid item xs={12} sm={6} md={4}>
             <Paper elevation={16} sx={{ padding: 4 }}>
                 <img style={{ width: '100%' }} src={img} alt="" />
-                <Typography sx={{ textAlign: 'left' }} variant="h6">
+                <Typography sx={{ textAlign: 'left', color: '#5e5e5e', fontFamily: 'Montserrat' }} variant="h6">
                     {name}
                 </Typography>
                 <Typography sx={{ textAlign: 'left', my: 1 }} variant="body2">
