@@ -1,6 +1,7 @@
-import { Container, Grid, Typography } from '@mui/material';
+import { Button, Container, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useEffect, useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import LatestBike from '../LatestBike/LatestBike';
 
 const LatestBikes = () => {
@@ -27,6 +28,7 @@ const LatestBikes = () => {
                         ></LatestBike>)
                     }
                 </Grid>
+                <NavLink style={{ textDecoration: 'none' }} to="/bike"><Button sx={{ mt: 8 }} variant="contained">More Bikes</Button></NavLink>
             </Box>
         </Container>
     );

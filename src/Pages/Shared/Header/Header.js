@@ -5,8 +5,10 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link as NavLink } from "react-router-dom";
+import useFirebase from '../../../hooks/useFirebase';
 
 const Header = () => {
+    const { user, logOut } = useFirebase();
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
@@ -15,9 +17,11 @@ const Header = () => {
                         A.zaz Bicycle
                     </Typography>
                     <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/home"><Button color="inherit">Home</Button></NavLink>
-                    <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/cycles"><Button color="inherit">Cycles</Button></NavLink>
-                    <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/about"><Button color="inherit">About</Button></NavLink>
-                    <Button color="inherit">Login</Button>
+                    <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/bike"><Button color="inherit">Bikes</Button></NavLink>
+                    <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/dashboard"><Button color="inherit">Dashboard</Button></NavLink>
+                    {
+                        user?.email ? <Button variant="contained" onClick={logOut}>LogOut</Button> : <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/login"><Button color="inherit">Login</Button></NavLink>
+                    }
                 </Toolbar>
             </AppBar>
         </Box>

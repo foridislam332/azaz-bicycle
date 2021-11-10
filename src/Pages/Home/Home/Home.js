@@ -13,7 +13,6 @@ const Home = () => {
             <Banner></Banner>
             <LatestBikes></LatestBikes>
             <News></News>
-            <h1>Home Comming</h1>
             <Button variant="contained">Contained</Button>
             <Footer></Footer>
         </div>
