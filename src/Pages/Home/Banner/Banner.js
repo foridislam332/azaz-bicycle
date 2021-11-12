@@ -2,9 +2,11 @@ import { Button, Container, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 
+
+// https://i.ibb.co/93j242r/banner-bg.jpg
 const Banner = () => {
     return (
-        <div style={{ backgroundImage: 'url(https://i.ibb.co/93j242r/banner-bg.jpg)', color: 'white', height: '100vh', backgroundPosition: 'center', backgroundSize: 'cover', display: 'flex', flexDirection: 'column', justifyContent: 'center' }} className="banner_area">
+        <div style={{ backgroundImage: 'url(https://i.ibb.co/QYSS7n8/bg3.jpg)', color: 'white', height: '100vh', backgroundPosition: 'right', backgroundSize: 'cover', display: 'flex', flexDirection: 'column', justifyContent: 'center' }} className="banner_area">
             <Container>
                 <Box>
                     <Grid container spacing={2}>

@@ -30,17 +30,17 @@ const Login = () => {
     }
 
     return (
-        <div>
+        <div style={{ background: 'url(https://i.ibb.co/tPgPNwp/bg5.jpg)', backgroundPosition: 'center', backgroundSize: 'cover' }}>
             <Header></Header>
             <Container>
-                <Grid container spacing={2}>
+                <Grid sx={{ py: 8 }} container spacing={2}>
                     <Grid item sx={12} md={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         <Paper elevation={24} sx={{ width: '380px' }} >
                             <Box sx={{ p: 7 }}>
                                 <Typography sx={{ mb: 4 }} variant="h5">Login</Typography>
                                 <form onSubmit={handleLoginSubmit} style={{ display: 'flex', flexDirection: 'column' }}>
                                     <TextField
-                                        label="User name"
+                                        label="User Email"
                                         id="standard-size-small"
                                         variant="standard"
                                         name="email"
@@ -67,7 +67,7 @@ const Login = () => {
                         </Paper>
                     </Grid>
                     <Grid item sx={12} md={6}>
-                        <img style={{ width: '90%' }} src="https://i.ibb.co/9NVNhf4/login.png" alt="" />
+
                     </Grid>
                 </Grid>
             </Container>

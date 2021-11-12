@@ -20,7 +20,7 @@ const Bike = ({ bike }) => {
                     <Typography sx={{ textAlign: 'left', fontWeight: 'medium' }} variant="h6">
                         Price: <span style={{ color: 'red' }}>${price}</span>
                     </Typography>
-                    <NavLink style={{ textDecoration: 'none', color: 'white' }} to={url}><Button variant="contained">Buy Now</Button></NavLink>
+                    <NavLink style={{ textDecoration: 'none', color: 'white' }} to={url}><Button className="btn_regular">Buy Now</Button></NavLink>
                 </Box>
             </Paper>
         </Grid>

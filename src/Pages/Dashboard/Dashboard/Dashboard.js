@@ -14,7 +14,9 @@ import HomeIcon from '@mui/icons-material/Home';
 import DirectionsBikeIcon from '@mui/icons-material/DirectionsBike';
 import PaymentIcon from '@mui/icons-material/Payment';
 import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
-import ReviewsIcon from '@mui/icons-material/Reviews';
+import AddBusinessIcon from '@mui/icons-material/AddBusiness';
+import SettingsIcon from '@mui/icons-material/Settings';
+import ManageSearchIcon from '@mui/icons-material/ManageSearch';
 
 import {
     Switch,
@@ -27,6 +29,11 @@ import Home from '../../Home/Home/Home';
 import useAuth from '../../../hooks/useAuth';
 import Pay from '../Pay/Pay';
 import MyOrders from '../MyOrders/MyOrders';
+import AddNewBike from '../AddNewBike/AddNewBike';
+import ManageAllOrders from '../ManageAllOrders/ManageAllOrders';
+import ManageProducts from '../ManageProducts/ManageProducts';
+import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
+import MakeAdmin from '../MakeAdmin/MakeAdmin';
 
 const drawerWidth = 240;
 
@@ -36,7 +43,7 @@ function Dashboard(props) {
     const [mobileOpen, setMobileOpen] = React.useState(false);
     let { path, url } = useRouteMatch();
 
-    const { logOut } = useAuth();
+    const { logOut, admin } = useAuth();
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
@@ -55,16 +62,20 @@ function Dashboard(props) {
 
             <NavLink className="dash_btn" to={`${path}/myorder`}><ProductionQuantityLimitsIcon sx={{ color: 'white' }} /><Button sx={{ textAlign: 'left', display: 'block', color: 'white' }}>My Orders</Button></NavLink>
 
-            <NavLink className="dash_btn" to="/Review"><ReviewsIcon sx={{ color: 'white' }} /><Button sx={{ textAlign: 'left', display: 'block', color: 'white' }}>Review</Button></NavLink>
+            {
+                admin && <>
+                    <NavLink className="dash_btn" to={`${path}/makeAdmin`}><AdminPanelSettingsIcon sx={{ color: 'white' }} /><Button sx={{ textAlign: 'left', display: 'block', color: 'white' }}>Make Admin</Button></NavLink>
+
+                    <NavLink className="dash_btn" to={`${path}/addbike`}><AddBusinessIcon sx={{ color: 'white' }} /><Button sx={{ textAlign: 'left', display: 'block', color: 'white' }}>Add Bike</Button></NavLink>
+
+                    <NavLink className="dash_btn" to={`${path}/manage-orders`}><SettingsIcon sx={{ color: 'white' }} /><Button sx={{ textAlign: 'left', display: 'block', color: 'white' }}>Manage All Orders</Button></NavLink>
+
+                    <NavLink className="dash_btn" to={`${path}/manage-products`}><SettingsIcon sx={{ color: 'white' }} /><Button sx={{ textAlign: 'left', display: 'block', color: 'white' }}>Manage Products</Button></NavLink>
+                </>
+            }
 
             <Button className="dash_btn" sx={{ color: '#ffffff', mt: 1, background: 'red', borderRadius: 0 }} variant="contained" onClick={logOut}>LogOut</Button>
 
-            {/* {
-                admin && <Box>
-                    <Link to={`${url}/makeAdmin`}><Button sx={{ display: 'block' }} color="inherit">Make Admin</Button></Link>
-                    <Link to={`${url}/addDoctor`}><Button sx={{ display: 'block' }} color="inherit">Add Doctor</Button></Link>
-                </Box>
-            } */}
         </div >
     );
 
@@ -142,9 +153,21 @@ function Dashboard(props) {
                     <Route path={`${path}/myorder`}>
                         <MyOrders></MyOrders>
                     </Route>
+                    <Route path={`${path}/makeAdmin`}>
+                        <MakeAdmin></MakeAdmin>
+                    </Route>
+                    <Route path={`${path}/addbike`}>
+                        <AddNewBike></AddNewBike>
+                    </Route>
+                    <Route path={`${path}/manage-orders`}>
+                        <ManageAllOrders></ManageAllOrders>
+                    </Route>
+                    <Route path={`${path}/manage-products`}>
+                        <ManageProducts></ManageProducts>
+                    </Route>
                     {/* <AdminRoute path={`${path}/makeAdmin`}>
                         <MakeAdmin></MakeAdmin>
-                    </AdminRoute> */}myorder
+                    </AdminRoute> */}
                 </Switch>
             </Box>
         </Box>
