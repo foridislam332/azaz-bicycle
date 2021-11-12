@@ -10,7 +10,6 @@ const News = () => {
             .then(res => res.json())
             .then(data => setNews(data))
     }, [])
-    console.log(news)
     return (
         <Container>
             <Box sx={{ py: 10 }}>
@@ -25,7 +24,7 @@ const News = () => {
                         ></SingleNews>)
                     }
                 </Grid>
-                <Button sx={{ mt: 5 }} variant='contained'>See More...</Button>
+                <Button sx={{ mt: 5 }} className='btn_regular'>See More...</Button>
             </Box>
         </Container>
     );

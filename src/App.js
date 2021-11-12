@@ -6,6 +6,7 @@ import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
+import Orders from './Pages/Orders/Orders';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 
 
@@ -23,6 +24,9 @@ function App() {
                         </Route>
                         <PrivateRoute path="/dashboard">
                             <Dashboard></Dashboard>
+                        </PrivateRoute>
+                        <PrivateRoute path="/order/:bikeId">
+                            <Orders></Orders>
                         </PrivateRoute>
                         <Route path="/bike">
                             <Bikes></Bikes>

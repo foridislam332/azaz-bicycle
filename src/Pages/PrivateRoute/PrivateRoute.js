@@ -6,9 +6,11 @@ import useAuth from '../../hooks/useAuth';
 const PrivateRoute = ({ children, ...rest }) => {
     const { user, isLoading } = useAuth();
     if (isLoading) {
-        <Stack sx={{ color: 'grey.500' }} spacing={2} direction="row">
-            <CircularProgress color="secondary" />
-        </Stack>
+        return (
+            <Stack sx={{ color: 'grey.700', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }} spacing={2} direction="row">
+                <CircularProgress color="secondary" />
+            </Stack>
+        )
     }
     return (
         <Route

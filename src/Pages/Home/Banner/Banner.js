@@ -10,13 +10,13 @@ const Banner = () => {
                     <Grid container spacing={2}>
                         <Grid item xs={12} md={6}>
                             <Box sx={{ textAlign: 'left' }}>
-                                <Typography variant="h3" component="h2">
-                                    Welcome to Azaz  Bicycle
+                                <Typography sx={{ textAlign: 'left', color: 'white', fontFamily: 'Montserrat', fontWeight: 'bold', lineHeight: '1.5' }} variant="h4">
+                                    Welcome to Our <br /> <span style={{ color: '#00d0ff' }}>Azaz  Bicycle</span> Online Shop
                                 </Typography>
-                                <Typography variant="body2" component="h2" sx={{ margin: '20px 0' }}>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos cupiditate autem minus, fugit aliquam ipsum dolorem itaque asperiores distinctio laborum.
+                                <Typography variant="body2" component="h2" sx={{ margin: '30px 0', fontFamily: 'Montserrat', color: '#bdbdbd' }}>
+                                    Bikes, Mountain bikes, Road Bikes, MTB Bikes, Bike Parts, Frames, BMX bikes and many more from our cyclestore bikes ranges. We offer top cycle brands. A specialist cycling marketplace connecting buyers and sellers throughout the UK and Europe.
                                 </Typography>
-                                <Button variant="contained">Learn more</Button>
+                                <Button className="btn_regular" variant="contained">Learn more</Button>
                             </Box>
                         </Grid>
                         <Grid item xs={12} md={6}>

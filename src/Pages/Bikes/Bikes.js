@@ -9,7 +9,7 @@ const Bikes = () => {
     const [bikes, setBikes] = useState([]);
 
     useEffect(() => {
-        fetch('./bikes.json')
+        fetch('http://localhost:5000/bikes')
             .then(res => res.json())
             .then(data => setBikes(data))
     }, [])
@@ -26,7 +26,7 @@ const Bikes = () => {
                     <Grid container spacing={2}>
                         {
                             bikes.map(bike => <Bike
-                                key={bike.id}
+                                key={bike._id}
                                 bike={bike}
                             ></Bike>)
                         }

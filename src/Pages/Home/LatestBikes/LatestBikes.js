@@ -1,14 +1,14 @@
 import { Button, Container, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useEffect, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import LatestBike from '../LatestBike/LatestBike';
 
 const LatestBikes = () => {
     const [bikes, setBikes] = useState([]);
 
     useEffect(() => {
-        fetch('./bikes.json')
+        fetch('http://localhost:5000/bikes')
             .then(res => res.json())
             .then(data => setBikes(data))
     }, [])
@@ -28,7 +28,7 @@ const LatestBikes = () => {
                         ></LatestBike>)
                     }
                 </Grid>
-                <NavLink style={{ textDecoration: 'none' }} to="/bike"><Button sx={{ mt: 8 }} variant="contained">More Bikes</Button></NavLink>
+                <NavLink style={{ textDecoration: 'none' }} to="/bike"><Button sx={{ mt: 8 }} className="btn_regular" >More Bikes</Button></NavLink>
             </Box>
         </Container>
     );

@@ -1,9 +1,6 @@
 import { Container, Grid, IconButton, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
-import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import GoogleIcon from '@mui/icons-material/Google';
 
 const Footer = () => {
     return (
@@ -53,15 +50,7 @@ const Footer = () => {
                                 </Typography>
                             </Box>
                             <Box>
-                                <IconButton
-                                    size="large"
-                                    aria-label="show more"
-                                    aria-haspopup="true"
-                                    color="inherit"
-                                >
-                                    <FacebookRoundedIcon />
-                                </IconButton>
-                                <IconButton
+                                {/* <IconButton
                                     size="large"
                                     aria-label="show more"
                                     aria-haspopup="true"
@@ -76,7 +65,7 @@ const Footer = () => {
                                     color="inherit"
                                 >
                                     <GoogleIcon />
-                                </IconButton>
+                                </IconButton> */}
                             </Box>
                         </Grid>
                     </Grid>
