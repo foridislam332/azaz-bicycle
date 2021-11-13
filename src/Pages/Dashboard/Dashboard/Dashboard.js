@@ -34,6 +34,9 @@ import ManageAllOrders from '../ManageAllOrders/ManageAllOrders';
 import ManageProducts from '../ManageProducts/ManageProducts';
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
+import Reviews from '../../Home/Reviews/Reviews';
+import AddReviews from '../AddReviews/AddReviews';
+import DashboardHome from '../DashboardHome/DashboardHome';
 
 const drawerWidth = 240;
 
@@ -62,6 +65,8 @@ function Dashboard(props) {
 
             <NavLink className="dash_btn" to={`${path}/myorder`}><ProductionQuantityLimitsIcon sx={{ color: 'white' }} /><Button sx={{ textAlign: 'left', display: 'block', color: 'white' }}>My Orders</Button></NavLink>
 
+            <NavLink className="dash_btn" to={`${path}/reviews`}><ProductionQuantityLimitsIcon sx={{ color: 'white' }} /><Button sx={{ textAlign: 'left', display: 'block', color: 'white' }}>Reviews</Button></NavLink>
+
             {
                 admin && <>
                     <NavLink className="dash_btn" to={`${path}/makeAdmin`}><AdminPanelSettingsIcon sx={{ color: 'white' }} /><Button sx={{ textAlign: 'left', display: 'block', color: 'white' }}>Make Admin</Button></NavLink>
@@ -70,7 +75,7 @@ function Dashboard(props) {
 
                     <NavLink className="dash_btn" to={`${path}/manage-orders`}><SettingsIcon sx={{ color: 'white' }} /><Button sx={{ textAlign: 'left', display: 'block', color: 'white' }}>Manage All Orders</Button></NavLink>
 
-                    <NavLink className="dash_btn" to={`${path}/manage-products`}><SettingsIcon sx={{ color: 'white' }} /><Button sx={{ textAlign: 'left', display: 'block', color: 'white' }}>Manage Products</Button></NavLink>
+                    <NavLink className="dash_btn" to={`${path}/manage-products`}><ManageSearchIcon sx={{ color: 'white' }} /><Button sx={{ textAlign: 'left', display: 'block', color: 'white' }}>Manage Products</Button></NavLink>
                 </>
             }
 
@@ -145,13 +150,16 @@ function Dashboard(props) {
                 <Toolbar />
                 <Switch>
                     <Route exact path={path}>
-                        <Home></Home>
+                        <DashboardHome></DashboardHome>
                     </Route>
                     <Route path={`${path}/pay`}>
                         <Pay></Pay>
                     </Route>
                     <Route path={`${path}/myorder`}>
                         <MyOrders></MyOrders>
+                    </Route>
+                    <Route path={`${path}/reviews`}>
+                        <AddReviews></AddReviews>
                     </Route>
                     <Route path={`${path}/makeAdmin`}>
                         <MakeAdmin></MakeAdmin>

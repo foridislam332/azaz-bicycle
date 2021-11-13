@@ -1,10 +1,10 @@
-import { Button } from '@mui/material';
 import React from 'react';
 import Header from '../../Shared/Header/Header';
 import Banner from '../Banner/Banner';
 import Footer from '../Footer/Footer';
 import LatestBikes from '../LatestBikes/LatestBikes';
 import News from '../News/News';
+import Reviews from '../Reviews/Reviews';
 
 const Home = () => {
     return (
@@ -12,8 +12,8 @@ const Home = () => {
             <Header></Header>
             <Banner></Banner>
             <LatestBikes></LatestBikes>
+            <Reviews></Reviews>
             <News></News>
-            <Button variant="contained">Contained</Button>
             <Footer></Footer>
         </div>
     );
