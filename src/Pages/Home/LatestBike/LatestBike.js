@@ -8,7 +8,7 @@ const LatestBike = ({ bike }) => {
     const url = `/order/${_id}`;
     return (
         <Grid item xs={12} sm={6} md={4}>
-            <Paper elevation={16} sx={{ padding: 4, border: '1px solid #bdbdbd', borderRadius: 0 }}>
+            <Paper className="card_design" sx={{ padding: 4, border: '1px solid #bdbdbd', borderRadius: 0 }}>
                 <img style={{ width: '100%' }} src={img} alt="" />
                 <Typography sx={{ textAlign: 'left', mt: 2, color: '#5e5e5e', fontFamily: 'Montserrat' }} variant="h6">
                     {name}

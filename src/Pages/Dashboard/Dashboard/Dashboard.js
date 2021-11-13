@@ -37,6 +37,7 @@ import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import Reviews from '../../Home/Reviews/Reviews';
 import AddReviews from '../AddReviews/AddReviews';
 import DashboardHome from '../DashboardHome/DashboardHome';
+import ReviewsIcon from '@mui/icons-material/Reviews';
 
 const drawerWidth = 240;
 
@@ -65,7 +66,7 @@ function Dashboard(props) {
 
             <NavLink className="dash_btn" to={`${path}/myorder`}><ProductionQuantityLimitsIcon sx={{ color: 'white' }} /><Button sx={{ textAlign: 'left', display: 'block', color: 'white' }}>My Orders</Button></NavLink>
 
-            <NavLink className="dash_btn" to={`${path}/reviews`}><ProductionQuantityLimitsIcon sx={{ color: 'white' }} /><Button sx={{ textAlign: 'left', display: 'block', color: 'white' }}>Reviews</Button></NavLink>
+            <NavLink className="dash_btn" to={`${path}/reviews`}><ReviewsIcon sx={{ color: 'white' }} /><Button sx={{ textAlign: 'left', display: 'block', color: 'white' }}>Reviews</Button></NavLink>
 
             {
                 admin && <>
@@ -173,9 +174,6 @@ function Dashboard(props) {
                     <Route path={`${path}/manage-products`}>
                         <ManageProducts></ManageProducts>
                     </Route>
-                    {/* <AdminRoute path={`${path}/makeAdmin`}>
-                        <MakeAdmin></MakeAdmin>
-                    </AdminRoute> */}
                 </Switch>
             </Box>
         </Box>

@@ -37,8 +37,6 @@ const Orders = () => {
                     ></Order>
                 </Box>
             </Container>
-            <h1>Orders comming</h1>
-            <h1>Order ID: {bikeId}</h1>
             <Footer></Footer>
         </div >
     );

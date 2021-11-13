@@ -4,7 +4,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <Box sx={{ background: '#e0e0e0', color: "#212121", padding: '50px 0 0' }}>
+        <Box sx={{ background: '#fff', color: "#212121", padding: '50px 0 0' }}>
             <Container>
                 <Box sx={{ textAlign: 'left' }}>
                     <Grid container spacing={6}>
@@ -48,24 +48,6 @@ const Footer = () => {
                                     <br />
                                     Email: azaz.cycle @gmail.com
                                 </Typography>
-                            </Box>
-                            <Box>
-                                {/* <IconButton
-                                    size="large"
-                                    aria-label="show more"
-                                    aria-haspopup="true"
-                                    color="inherit"
-                                >
-                                    <TwitterIcon />
-                                </IconButton>
-                                <IconButton
-                                    size="large"
-                                    aria-label="show more"
-                                    aria-haspopup="true"
-                                    color="inherit"
-                                >
-                                    <GoogleIcon />
-                                </IconButton> */}
                             </Box>
                         </Grid>
                     </Grid>

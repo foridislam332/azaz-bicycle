@@ -13,11 +13,11 @@ const Reviews = () => {
     console.log(reviews)
     return (
         <Container>
-            <Typography sx={{ mt: 2, mb: 5, fontFamily: 'Montserrat', fontWeight: 'bold' }} variant="h4">
+            <Typography sx={{ mt: 7, mb: 5, fontFamily: 'Montserrat', fontWeight: 'bold' }} variant="h4">
                 Reviews
             </Typography>
             <Box>
-                <Grid container spacing="4">
+                <Grid container spacing={4}>
                     {
                         reviews.map(review => <Review
                             key={review._id}

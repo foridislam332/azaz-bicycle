@@ -31,7 +31,7 @@ const AddReviews = () => {
 
                     <input defaultValue={user.email} {...register("email", { required: true })} />
 
-                    <input defaultValue={user.photoURL} {...register("img", { required: true })} />
+                    <input placeholder="User image url" defaultValue={user.photoURL} {...register("img")} />
 
                     <textarea placeholder="Write Your Review" {...register("description", { required: true })} />
                     <input style={{ background: '#1976d2 !importent' }} className="btn_regular" type="submit" value="Add New Bike" />

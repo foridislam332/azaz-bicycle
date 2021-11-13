@@ -34,6 +34,9 @@ const ManageAllOrders = () => {
     return (
         <div>
             <Container>
+                <Typography variant="h4" sx={{ fontWeight: 'medium', fontFamily: 'Montserrat', mb: 5 }}>
+                    Total Orders : {allOrders.length}
+                </Typography>
                 <Box>
                     <Grid container spacing={2}>
                         {

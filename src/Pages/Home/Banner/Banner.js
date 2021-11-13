@@ -1,6 +1,7 @@
 import { Button, Container, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 
 // https://i.ibb.co/93j242r/banner-bg.jpg
@@ -18,7 +19,7 @@ const Banner = () => {
                                 <Typography variant="body2" component="h2" sx={{ margin: '30px 0', fontFamily: 'Montserrat', color: '#bdbdbd' }}>
                                     Bikes, Mountain bikes, Road Bikes, MTB Bikes, Bike Parts, Frames, BMX bikes and many more from our cyclestore bikes ranges. We offer top cycle brands. A specialist cycling marketplace connecting buyers and sellers throughout the UK and Europe.
                                 </Typography>
-                                <Button className="btn_regular" variant="contained">Learn more</Button>
+                                <NavLink style={{ textDecoration: 'none' }} to="/bike"><Button sx={{ mt: 2 }} className="btn_regular" >Buy Now</Button></NavLink>
                             </Box>
                         </Grid>
                         <Grid item xs={12} md={6}>

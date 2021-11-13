@@ -19,11 +19,28 @@
   box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 }
 
+.card_design{
+  box-shadow: 0 !important;
+  transition: all .3s;
+}
+.card_design:hover{
+  box-shadow: 0 10px 80px 0px #6776e5 !important;
+}
+
+.bike_card_design{
+  box-shadow: 0 !important;
+  transition: all .3s;
+  border: 1px solid #1976d2  !important;
+}
+.bike_card_design:hover{
+  box-shadow: 0 10px 35px 0px #bbb3b3 !important;
+  border: 1px solid #ff4e2f  !important;
+}
 
 .dash_btn{
   background: #00bf84;
-  padding: 3px 15px;
-  width: 70%;
+  padding: 3px 0 3px 10px;
+  width: 90%;
   margin-bottom: 10px;
   text-align: left;
   text-decoration: none;
@@ -36,6 +53,31 @@
 .dash_btn:hover{
   background-color: #1565c0;
   box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+.box_container{
+  position: relative;
+  height: 285px;
+  width: auto;
+  transition: all .3s ease-in-out !important;
+  cursor: pointer;
+}
+
+.box_design{
+  text-align: left;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 0 !important;
+  position: absolute;
+  top: 8%;
+  transition: all .3s ease-in-out !important;
+}
+.person_box{
+  position: absolute;
+  bottom: 0;
+}
+.box_container:hover .box_design{
+  top: 0;
+  box-shadow: 0 10px 30px 0px #e0e0e0;
 }
 
 .App-logo {
