@@ -13,7 +13,7 @@ const Orders = () => {
     const [bike, setBike] = useState({});
 
 
-    const url = `http://localhost:5000/bikes/${bikeId}`;
+    const url = `https://desolate-crag-02664.herokuapp.com/bikes/${bikeId}`;
     useEffect(() => {
         fetch(url)
             .then(res => res.json())

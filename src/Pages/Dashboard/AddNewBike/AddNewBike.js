@@ -8,7 +8,7 @@ const AddNewBike = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data)
-        axios.post('http://localhost:5000/bikes', data)
+        axios.post('https://desolate-crag-02664.herokuapp.com/bikes', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Bike added successfully');

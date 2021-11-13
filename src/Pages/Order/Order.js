@@ -19,7 +19,7 @@ const Order = ({ bike }) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
         const newData = { ...newBikeData, ...data }
-        axios.post('http://localhost:5000/userOrder', newData)
+        axios.post('https://desolate-crag-02664.herokuapp.com/userOrder', newData)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully');

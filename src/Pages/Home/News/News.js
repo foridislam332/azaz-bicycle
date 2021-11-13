@@ -6,7 +6,7 @@ import SingleNews from '../SingleNews/SingleNews';
 const News = () => {
     const [news, setNews] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/news')
+        fetch('https://desolate-crag-02664.herokuapp.com/news')
             .then(res => res.json())
             .then(data => setNews(data))
     }, [])
