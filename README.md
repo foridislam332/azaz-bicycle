@@ -9,7 +9,7 @@
     <li>Fully Responsive Layout</li>
     <li>Mobile, Tab and Desktop Device Friendly Website</li>
     <li>Login System Available use google Firebase</li>
-    <li>e-Commerce functionality</li>
+    <li>e-Commerce  functionality</li>
 </ul>
 
 <h2>Description:</h2> 
